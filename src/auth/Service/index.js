@@ -16,7 +16,7 @@ class Service {
       throw new Error(err.message);
     }
   }
-  // re sign before request
+  // re sign before request?
   sign ({ payload }) {
     try {
       return jwt.sign(payload, credentials.privateKey, signOptions);
